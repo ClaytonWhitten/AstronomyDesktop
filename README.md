@@ -4,4 +4,4 @@ A mini program to set the desktop background image to the NASA's Astronomy Pictu
 
 ## NOTES:
 
-1. This is only currently working on Windows systems, spefically Windows 10+
+1. This is only currently working on Windows systems, specifically Windows 10+
