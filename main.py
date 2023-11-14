@@ -27,9 +27,9 @@ correct_fit_apod = Image.open('apod.jpg')
 (width, height) = correct_fit_apod.size
 left = int((width - 1920)/2)
 right = left + 1920
-new_img = correct_fit_apod.crop((left, 0, right, height))
-new_img = new_img.resize((1920, 1080))
-new_img.save('apod.jpg', quality=95)
+resized_img = correct_fit_apod.crop((left, 0, right, height))
+resized_img = resized_img.resize((1920, 1080))
+resized_img.save('apod.jpg', quality=95)
 
 # sets the desktop background image
 SPI_SETDESKWALLPAPER = 20
