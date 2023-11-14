@@ -4,8 +4,8 @@
 # @author Clayton Whitten
 # @version 1.0
 
-import ctypes
-import os
+from ctypes import windll
+from os import getcwd
 from PIL import Image
 import requests
 
@@ -34,5 +34,5 @@ resized_img.save('apod.jpg', quality=95)
 
 # sets the desktop background image
 SPI_SETDESKWALLPAPER = 20
-apod_path = rf"{os.getcwd()}\apod.jpg"
-ctypes.windll.user32.SystemParametersInfoW(SPI_SETDESKWALLPAPER, 0, apod_path, 3)
+apod_path = rf"{getcwd()}\apod.jpg"
+windll.user32.SystemParametersInfoW(SPI_SETDESKWALLPAPER, 0, apod_path, 3)
