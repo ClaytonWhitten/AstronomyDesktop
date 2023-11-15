@@ -24,13 +24,13 @@ with open(rf'{os.getcwd()}\apod.jpg', 'wb') as handler:
     handler.write(apod)
 
 # resizes the image to standard 1920x1080
-correct_fit_apod = Image.open('apod.jpg')
-(width, height) = correct_fit_apod.size
+apod_img = Image.open('apod.jpg')
+(width, height) = apod_img.size
 left = int((width - 1920)/2)
 right = left + 1920
-resized_img = correct_fit_apod.crop((left, 0, right, height))
-resized_img = resized_img.resize((1920, 1080))
-resized_img.save('apod.jpg', quality=95)
+resized_img = apod_img.crop((left, 0, right, height))
+resized_img = resized_img.resize((1920, height))
+resized_img.save('apod.jpg')
 
 # sets the desktop background image
 SPI_SETDESKWALLPAPER = 20
