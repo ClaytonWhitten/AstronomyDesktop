@@ -1,5 +1,5 @@
 # Astronomy Picture Of the Day Desktop Background
-### v1.0
+### v1.1
 
 A mini program to set the desktop background image to the NASA's Astronomy Picture Of the Day, every day, using [NASA's APOD](https://github.com/nasa/apod-api/tree/master)
 
