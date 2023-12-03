@@ -11,17 +11,26 @@ import requests
 
 # returns the byte data of the astronomy picture of the day image
 def get_apod_image():
-    data_url = requests.get(
-        url=f"https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY"
-    ).json()['url']
+    data = requests.get(
+        url="https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&thumbs=True"
+    ).json()
+
+    if "thumbnail_url" in data:
+        data_url = data['thumbnail_url']
+    else:
+        data_url = data['url']
 
     image_data = requests.get(data_url).content
     return image_data
 
 # writes image byte data into jpg file
 apod = get_apod_image()
-with open(rf'{os.getcwd()}\apod.jpg', 'wb') as handler:
-    handler.write(apod)
+print(apod)
+try:
+    with open(rf'{os.getcwd()}\apod.jpg', 'wb') as handler:
+        handler.write(apod)
+except Exception as e:
+    print(f"Error writing to 'apod.jpg': {e}")
 
 # resizes the image to standard 1920x1080
 apod_img = Image.open('apod.jpg')
