@@ -2,6 +2,8 @@
 
 A mini program to set the desktop background image to the NASA's Astronomy Picture Of the Day, every day, using [NASA's APOD](https://github.com/nasa/apod-api/tree/master)
 
+#### [Download AstronomyDesktop](https://github.com/ClaytonWhitten/AstronomyDesktop/archive/refs/heads/master.zip)
+
 ## NOTES:
 
 1. This is only currently working on Windows systems, specifically Windows 10+
@@ -12,15 +14,11 @@ A mini program to set the desktop background image to the NASA's Astronomy Pictu
    4. Done! Enjoy a new astronomy picture on your desktop every day!
 
 
-
-
 ### [Version 1.2](CHANGELOG.md)
 
 **Bug Fixes:**
 
 - App was not supporting videos that were put on NASA's APOD. The app will now set the thumbnail of the video to be the desktop background.
-
-
 
 
 [View Full Changelog](CHANGELOG.md)
