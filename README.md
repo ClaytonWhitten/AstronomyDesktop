@@ -11,11 +11,16 @@ A mini program to set the desktop background image to the NASA's Astronomy Pictu
    3. You may need to restart your computer
    4. Done! Enjoy a new astronomy picture on your desktop every day!
 
+
+
+
 ### [Version 1.2](CHANGELOG.md)
 
 **Bug Fixes:**
 
 - App was not supporting videos that were put on NASA's APOD. The app will now set the thumbnail of the video to be the desktop background.
+
+
 
 
 [View Full Changelog](CHANGELOG.md)
