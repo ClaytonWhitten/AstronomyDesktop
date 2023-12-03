@@ -4,7 +4,7 @@
 
 - App was not supporting videos that were put on NASA's APOD. The app will now set the thumbnail of the video to be the desktop background.
 
-## [1.1] (2023-11-)
+## [1.1] (2023-11-15)
 
 **Implemented Enhancements:**
 
