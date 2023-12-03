@@ -25,7 +25,6 @@ def get_apod_image():
 
 # writes image byte data into jpg file
 apod = get_apod_image()
-print(apod)
 try:
     with open(rf'{os.getcwd()}\apod.jpg', 'wb') as handler:
         handler.write(apod)
