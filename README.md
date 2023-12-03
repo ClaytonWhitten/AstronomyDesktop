@@ -11,3 +11,6 @@ A mini program to set the desktop background image to the NASA's Astronomy Pictu
    2. Place that shortcut in the shell:startup folder. (Which you can get to by doing Win+R and typing in shell:startup, then clicking OK)
    3. You may need to restart your computer
    4. Done! Enjoy a new astronomy picture on your desktop every day!
+
+## Changelog
+[View Changelog](CHANGELOG.md)
