@@ -2,7 +2,7 @@
 # day using the NASA Astronomy Picture Of the Day API
 #
 # @author Clayton Whitten
-# @version 1.1
+# @version 1.2
 
 import ctypes
 import os
